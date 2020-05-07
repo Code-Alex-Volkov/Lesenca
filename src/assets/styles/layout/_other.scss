@@ -9,4 +9,17 @@
 	line-height: 20px;
 	text-align: center;
 	color: #202020;
+	transition: all 200ms ease-in-out;
+	&:hover {
+		background: #FF9646;
+		transition: all 200ms ease-in-out;
+	}
+}
+
+.btn_click, .submit {
+	transition: all 200ms ease-in-out;
+	&:hover {
+		background: #202020 !important;
+		transition: all 200ms ease-in-out;
+	}
 }

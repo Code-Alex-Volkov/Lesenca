@@ -1,16 +1,10 @@
-import script from "./modules/script"
-import bootstrap from "bootstrap"
-import FontAwesomeFree from "@fortawesome/fontawesome-free/js/all"
-/*import MagnificPopup from "magnific-popup/dist/jquery.magnific-popup.min"*/
+import jquery from "jquery/dist/jquery.min.js"
 import slick from "slick-carousel/slick/slick"
 import jqueryScript from "./modules/jqueryScript"
+import FontAwesomeFree from "@fortawesome/fontawesome-free/js/all"
 
 
-script();
-bootstrap();
-FontAwesomeFree();
 slick();
-/*MagnificPopup();*/
+jquery();
 jqueryScript();
-
-
+FontAwesomeFree();

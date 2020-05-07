@@ -4,7 +4,13 @@
 	margin: 0 auto;
 }
 
+a {
+	color: #202020;
+}
+
 body {
   line-height: 1;
+  color: #202020;
+  font-style: normal;
   @include Montserrat_font();
 }
