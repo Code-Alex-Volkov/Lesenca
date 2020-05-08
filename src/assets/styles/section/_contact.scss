@@ -1,0 +1,84 @@
+.map_container {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 462px;
+		width: 30%;
+		background: #F9BB88;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 462px;
+		width: 70%;
+		background: #f4f4f4;
+	}
+	.map_contact {
+		position: relative;
+		z-index: 100;
+	}
+}
+
+.advantages {
+	.contact_box {
+		padding-top: 75px;
+		padding-bottom: 0;
+		.list_contact {
+			background: #FFFFFF;
+			border: 2px solid #F4F4F4;
+			box-sizing: border-box;
+			display: flex;
+			width: 33.33333%;
+			&:not(:last-child) {
+				border-right: 2px solid transparent;
+			}
+			.icon_box {
+				span.icon {
+					position: relative;
+					margin-left: 56px;
+					margin-top: 60px;
+					display: inline-block;
+					padding-bottom: 60px;
+					&:before {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						top: -11px;
+						left: -7px;
+						width: 21px;
+						height: 80px;
+						background: #F9BB88;
+					}
+					img {
+						position: relative;
+						z-index: 100;
+					}
+				}
+			}
+			
+			.right_advant {
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-left: 30px;
+				.title_advant {
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 170%;
+				}
+				.text_advant {
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 160%;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

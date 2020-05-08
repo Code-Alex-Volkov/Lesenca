@@ -48,4 +48,16 @@ $(document).ready(function(){
 		});
 	}
 
+	$('.popup-btn').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeIn(400);
+		$('body').addClass('over_hidden');
+	});
+	$('.popup-close').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeOut(400);
+		$('body').removeClass('over_hidden');
+	});
+
+
 });
