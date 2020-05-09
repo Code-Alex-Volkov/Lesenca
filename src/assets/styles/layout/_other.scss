@@ -1,4 +1,3 @@
-
 .btn_white {
 	display: inline-block;
 	padding: 15px 53px;
@@ -8,8 +7,10 @@
 	font-size: 14px;
 	line-height: 20px;
 	text-align: center;
-	color: #202020;
 	transition: all 200ms ease-in-out;
+	@media (max-width: 1440px) {
+		padding: 10px 40px;					
+	}
 	&:hover {
 		background: #FF9646;
 		transition: all 200ms ease-in-out;
@@ -24,179 +25,82 @@
 	}
 }
 
-
-.popup {
- 	display:none;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
+.card_quiz {
+	max-width: 178px;
 	width: 100%;
-	height: 100%;
-	z-index: 100;
-	background-color: rgba(0, 0, 0, 0.7);
-	.popup-content {
-		position: fixed;
-		left: 50%;
-		top:50%;
-		transform: translateX(-50%) translateY(-50%);
-		background-color: #fff;
-		width: 25%;
-		text-align: center;
-		.popup-close {
-			position: absolute;
-			top: -15px;
-			right: -20px;
-			width: 20px;
-			background-color: transparent;
-			text-align: center;
-			border: none;
-			font-size: 50px;
-			color: #fff; 
-			cursor: pointer;
-			outline: none;
-		}
-		.form_block_popup {
-			padding: 30px;
-			box-sizing: border-box;
-			.input_box {
-				flex-wrap: wrap;
-				margin-bottom: 0;
-				.input_block {
-					width: 100%;
-					padding-bottom: 15px;
-					input[type="email"], input[type="text"] {
-						height: 42px;
-					}
-				}
-			}
-			label {
-				font-size: 20px;
-				padding-bottom: 5px;
-			}
-			.ok_clik {
-				width: 100%;
-				a {
-					font-size: 18px;
-				}
-			}
-			.submit_box {
-				padding-bottom: 30px;
-			}
-			.bottom_text, .ok_clik {
-				font-size: 18px;
-				line-height: 20px;
-			}
-		}
-	}	
-}
-
-.form_block_popup {
-	width: 100%;
-	padding-bottom: 100px;
-	.input_box {
-		display: flex;
-		margin-bottom: 30px;
-		justify-content: space-between;
-		.input_block {
-			display: flex;
-			flex-direction: column;
-			width: 48.5%;
-			input[type="text"], input[type="email"] {
-				background: #fff;
-				border: 1px solid #fff;
-				box-shadow: 0 0 5px #c1c1c1;
-				border-radius: 0;
-				color: #000;
-				font-size: 20px;
-				height: 50px;
-				padding: 0 20px;
-				width: 100%;
-				height: 62px;
-				box-sizing: border-box;
-				transition: all 200ms ease-in-out;
-				&:hover, &:active, &:focus {
-					box-shadow: 0 0 3px #0023ff;
-					transition: all 200ms ease-in-out;
-				}
-			}
-		}
-	}
-	.textarea_box {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 50px;
-
-		textarea.textarea_message {
-		   background: #fff;
-			border: 1px solid #fff;
-			box-shadow: 0 0 5px #c1c1c1;
-			border-radius: 0;
-			color: #000;
-			font-size: 20px;
-			height: 200px;
-			padding: 20px;
-			width: 100%;
-			box-sizing: border-box;
-			transition: all 300ms ease-in-out;
-			&:hover, &:active, &:focus {
-				box-shadow: 0 0 3px #0023ff;
-				transition: all 300ms ease-in-out;
-			}
-		}
-	}
-	.submit_box {
-		padding-bottom: 50px;
-		.submit {
-			font-size: 16px; 
-			display: inline-block;
-			padding: 15px 20px;
-			text-align: center;
-			color: #fff;
-			background: #0023ff;
-			border-radius: 5px;
-			text-decoration: none;
-			text-transform: uppercase;
-			border: 1px solid #0023ff;
-			cursor: pointer;
-			transition: all 200ms ease-in-out;
-			&:hover {
-				border: 1px solid #0023ff;
-				background: #fff;
-				color: #0023ff;
-				transition: all 200ms ease-in-out;
-			}
-		}
-	}
-	label {
-		font-size: 24px;
-		line-height: 30px;
-		color: #000;
+	.radio {
+		position: relative;
+		display: inline-block;
 		cursor: pointer;
-		padding-bottom: 15px;
-		display: block;
-		width: max-content;
-	}
-	.bottom_text {
-		font-size: 20px;
-		color: #000;
-		display: block;
-		padding-bottom: 20px;
-	}
-	.ok_clik {
-		font-size: 20px;
-		line-height: 22px;
-		color: #000;
-		display: block;
-		width: 50%;
+		margin-bottom: 32px;
+		max-width: 178px;
+		width: 100%;
+		input:checked + .box_quiz_img:after {
+			content: '';
+			position: absolute;
+			bottom: -22px;
+			left: 50%;
+			transform: translateX(-50%) translateY(0px);
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border-radius: 100%;
+			outline: none;
+			background: #fff;
+			box-shadow: 0px -3px 9px rgba(0, 0, 0, 0.06);
+			border: 13px solid #F9BB88;
+			transition: all 0.2s ease;
+		}
+		&:hover {
 
-		a {
-			font-size: 20px;
-			color: #000;
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
+			.box_quiz_img {
+				background: rgba(0, 0, 0, 0.15);
+				transition: all 0.3s ease;
 			}
 		}
+		input.check_box {
+			display: none;
+		}
+		.box_quiz_img {
+			background: #F4F4F4;
+			max-width: 178px;
+			width: 100%;
+			height: 162px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease;
+			img {
+				max-width: 178px;
+				width: 100%;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -22px;
+			left: 50%;
+			transform: translateX(-50%) translateY(0px);
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border-radius: 100%;
+			outline: none;
+			background: #E2E2E2;
+			border: 13px solid #fff;
+			transition: all 0.2s ease;
+		}
+	}
+	
+	.sub_title_img {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 140%;
+		display: flex;
+		justify-content: center;
+		padding: 0 40px;
+		text-align: center;
 	}
 }

@@ -23,16 +23,16 @@
 				</div>
 				<nav class="nav">
 					<ul>
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Примеры работ</a></li>
+						<li><a href="about-us.html">О компании</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="work-principles.html">Примеры работ</a></li>
 						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="info_phone">
 					<a class="phone" href="tel:+7(930)283-50-65">+7(930)283-50-65</a>
-					<a class="btn_click" href="tel:+7(930)283-50-65">Позвоните мне!</a>
+					<a class="btn_click" href="#">Позвоните мне!</a>
 				</div>
 			</div>
 			<div class="center_header">
@@ -40,14 +40,14 @@
 					<img src="assets/images/header_mask.jpg" alt="Картинка" />
 					<div class="cost">
 						<div class="cost_title">Рассчитайте стоимость<br> вашей лестницы <span>в 3 шага</span></div>
-						<div class="btn_class"><a class="btn_white" href="#">Подробнее</a></div>
+						<div class="btn_class"><a class="btn_white popup-btn-quiz" href="#">Подробнее</a></div>
 					</div>
 				</div>
 				<div class="right_box">
 					<div class="top_title">Всего <span>за 10 дней</span>  с гарантией <span>30 лет</span></div>
 					<h1 class="title">Монолитные лестницы «под ключ»</h1>
 					<p class="sub_title">Исполним все ваши мечты о современной и красивой лестнице по минимальной цене, но с максимальным качеством!</p>
-					<div class="btn_class"><a class="btn_click" href="#">Консультация</a></div>
+					<div class="btn_class"><a class="btn_click popup-btn" href="#">Консультация</a></div>
 				</div>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 				<div class="list">
 					<div class="icon_box"><span class="icon"><img src="assets/images/icon1.svg" alt="icon"></span></div>
 					<div class="right_advant">
-						<span class="title_advant">Работаем <br> без посредников</span>
+						<span class="title_advant">Работаем без посредников</span>
 						<p class="text_advant">Изготовление и монтаж осуществляют только наши мастера с опытом работы более Х-ти лет.</p>
 					</div>
 				</div>
@@ -92,7 +92,7 @@
 					<div class="info_box">
 						<div class="title_card">Прямая лестница</div>
 						<div class="price">от <span>18 000</span> Р за м.п.</div>
-						<div class="btn_class"><a class="btn_click" href="#">Подробнее</a></div>
+						<div class="btn_class"><a class="btn_click" href="single-card.html">Подробнее</a></div>
 					</div>
 				</div>
 				<div class="card">
@@ -100,7 +100,7 @@
 					<div class="info_box">
 						<div class="title_card">Забежная лестница</div>
 						<div class="price">от <span>27 000</span> Р за м.п.</div>
-						<div class="btn_class"><a class="btn_click" href="#">Подробнее</a></div>
+						<div class="btn_class"><a class="btn_click" href="single-card.html">Подробнее</a></div>
 					</div>
 				</div>
 				<div class="card">
@@ -108,7 +108,7 @@
 					<div class="info_box">
 						<div class="title_card">Винтовая лестница</div>
 						<div class="price">от <span>30 000</span> Р за м.п.</div>
-						<div class="btn_class"><a class="btn_click" href="#">Подробнее</a></div>
+						<div class="btn_class"><a class="btn_click" href="single-card.html">Подробнее</a></div>
 					</div>
 					
 				</div>
@@ -117,7 +117,7 @@
 					<div class="info_box">
 						<div class="title_card">Винтовая лестница</div>
 						<div class="price">от <span>30 000</span> Р за м.п.</div>
-						<div class="btn_class"><a class="btn_click" href="#">Подробнее</a></div>
+						<div class="btn_class"><a class="btn_click" href="single-card.html">Подробнее</a></div>
 					</div>
 				</div>
 			</div>
@@ -353,7 +353,7 @@
 				</div>
 			</div>
 			<div class="bottom_footer">
-				<span class="copyright">2020 Все права защищены.</span>
+				<span class="copyright">&copy; 2020 Все права защищены.</span>
 				<a class="confid" href="#">Политика конфиденциальности</a>
 				<div class="soc_seti">
 					<a href="#" class="vk"><img src="assets/images/vk.svg" alt="vk"></a>
@@ -368,31 +368,316 @@
 		<div class="popup-dialog">
 			<!-- Содержимое модального окна -->
 			<div class="popup-content">
-				<button class="popup-close">&times;</button>
+				<div class="popup-close">
+					<span class="top_line"></span>
+					<span class="bottom_line"></span>
+				</div>
 				<!-- Заголовок окна -->
+				<div class="title_box">
+					<span class="title_section">Отправить заявку</span>
+					<span class="sub_title_section">на бесплатную консультацию</span>
+				</div>
 				<div class="form_block_popup">
 					<form action="#">
 						<div class="input_box">
 							<div class="input_block">
-								<label for="your_name">Ваше имя*</label>
-								<input type="text" id="your_name" class="input_name" name="your_name" required>
+								<label for="your_name_popup">Ваше имя...</label>
+								<input type="text" id="your_name_popup" class="input_name" name="name" required>
 							</div>
 							<div class="input_block">
-								<label for="your_email">E-mail адрес*</label>
-								<input type="email" id="your_email" class="input_email" name="your_email" required>
+								<label for="your_phone_popup">Ваш телефон...</label>
+								<input type="tel" id="your_phone_popup" class="input_phone" name="tel" required>
+							</div>
+							<div class="input_block">
+								<label for="your_email_popup">Ваш e-mail...</label>
+								<input type="email" id="your_email_popup" class="input_email" name="email" required>
 							</div>
 						</div>
-						<div class="textarea_box">
-							<label for="your_message">Что обсудим?*</label>
-							<textarea name="your_message" class="textarea_message" id="your_message" cols="30" rows="10"></textarea>
-						</div>
 						<div class="submit_box">
-							<input type="submit" class="submit" value="Отправить сообщение">
+							<input type="submit" class="submit" value="Отправить заявку">
+							<span class="ok_clik">Нажимая на кнопку вы соглашаетесь <br>с <a href="#">политикой конфиденциальности</a>.</span>
 						</div>
 					</form>
-					<span class="bottom_text">Я отвечу в течении 24 часов!</span>
-					<span class="ok_clik">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <br> с <a href="#">политикой конфиденциальности</a>.</span>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_quiz">
+		<div class="wrapper">
+			<div class="popup-content_quiz">
+				<!-- Заголовок окна -->
+				<div class="title_box">
+					<span class="title_quiz">Шаг 1 из 3</span>
+					<div class="line_background">
+						<span class="line"></span>
+					</div>
+					<span class="sub_title_quiz">Выберите тип лестницы</span>
+				</div>
+				<div class="slider_box_popup_quiz">
+					<div class="slider_box_quiz">
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="happy" value="Прямая лестница 11">
+								<div class="box_quiz_img">
+									<img src="assets/images/type_img1.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 11</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="happy" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/type_img2.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 12</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="happy" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/type_img3.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 13</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="happy" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/type_img4.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 14</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="happy" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/type_img5.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 15</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="happy" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/type_img6.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 16</span>
+						</div>
+					</div>
+					<div class="block_quiz_nav">
+						<div class="quiz_slider_navigation"></div>
+					</div>
+				</div>
+				<div class="btn_class"><a class="btn_click next_quiz2" href="#">Следующий шаг</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_quiz2">
+		<div class="wrapper">
+			<div class="popup-content_quiz">
+				<div class="title_box">
+					<span class="title_quiz">Шаг 2 из 3</span>
+					<div class="line_background">
+						<span class="line"></span>
+					</div>
+				</div>
+				<div class="center_box_quiz">
+					<div class="left_block">
+						<span class="sub_title_quiz">Выберите вид</span>
+						<div class="box_quiz">
+							<div class="card_quiz">
+								<label class="radio">
+									<input class="check_box" type="radio" name="vid" value="Гладкоподшитая лестница 21">
+									<div class="box_quiz_img">
+										<img src="assets/images/type_img1.png" alt="Картинка">
+									</div>
+								</label>
+								<span class="sub_title_img">Гладкоподшитая лестница 21</span>
+							</div>
+							<div class="card_quiz">
+								<label class="radio">
+									<input class="check_box" type="radio" name="vid" value="Зеркальная лестница 22">
+									<div class="box_quiz_img">
+										<img src="assets/images/type_img2.png" alt="Картинка">
+									</div>
+								</label>
+								<span class="sub_title_img">Зеркальная лестница 22</span>
+							</div>
+						</div>
+					</div>
+					<div class="right_block">
+						<span class="sub_title_quiz">Укажите размеры</span>
+						<div class="form_block_popup">
+							<form action="#">
+								<div class="input_box">
+									<div class="input_block">
+										<label for="your_height">Высота между этажами (см)</label>
+										<input type="text" id="your_height" class="input_height" name="height" required>
+									</div>
+									<div class="input_block">
+										<label for="your_large">Длина лестницы (см)</label>
+										<input type="text" id="your_large" class="input_large" name="large" required>
+									</div>
+									<div class="input_block">
+										<label for="your_width">Ширина ступени (см)</label>
+										<input type="text" id="your_width" class="input_width" name="width" required>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="btn_class"><a class="btn_click next_quiz3" href="#">Следующий шаг</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popup_quiz3">
+		<div class="wrapper">
+			<div class="popup-content_quiz">
+				<div class="title_box">
+					<span class="title_quiz">Шаг 3 из 3</span>
+					<div class="line_background">
+						<span class="line"></span>
+					</div>
+					<span class="sub_title_quiz">Выберите вариант отделки</span>
+				</div>
+				<div class="slider_box_popup_quiz">
+					<div class="box_quiz_three">
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="interior" value="Прямая лестница 31">
+								<div class="box_quiz_img">
+									<img src="assets/images/vid1.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 31</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="interior" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/vid2.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 32</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="interior" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/vid3.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 33</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="interior" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/vid4.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 34</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="interior" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/vid5.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 35</span>
+						</div>
+						<div class="card_quiz">
+							<label class="radio">
+								<input class="check_box" type="radio" name="interior" value="yes">
+								<div class="box_quiz_img">
+									<img src="assets/images/vid5.png" alt="Картинка">
+								</div>
+							</label>
+							<span class="sub_title_img">Прямая лестница 36</span>
+						</div>
+					</div>
+					<div class="block_quiz_nav">
+						<div class="three_slider_navigation"></div>
+					</div>
+				</div>
+				<div class="btn_class"><a class="btn_click next_quiz4" href="#">Следующий шаг</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popup_quiz4">
+		<div class="wrapper">
+			<div class="popup-content_quiz">
+				<div class="title_box">
+					<span class="title_quiz">Готово!</span>
+					<div class="line_background">
+						<span class="line"></span>
+					</div>
+				</div>
+				<div class="center_box_quiz">
+					<div class="left_block">
+						<span class="sub_title_quiz">Куда отправить рассчет?</span>
+						<div class="form_block_popup">
+							<form action="#">
+								<div class="input_box">
+									<div class="input_block">
+										<label for="your_name_quiz">Ваше имя...</label>
+										<input type="text" id="your_name_quiz" class="input__name_quiz" name="name_quiz" required>
+									</div>
+									<div class="input_block">
+										<label for="your_phone_quiz">Ваш телефон...</label>
+										<input type="tel" id="your_phone_quiz" class="input_phone_quiz" name="phone_quiz" required>
+									</div>
+									<div class="input_block">
+										<label for="your_email_quiz">Ваш e-mail...</label>
+										<input type="email" id="your_email_quiz" class="input_email_quiz" name="email_quiz" required>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="right_block">
+						<span class="sub_title_quiz">Параметры</span>
+						<div class="parameters">
+							<div class="line_params">
+								<span class="left_param">Тип лестницы:</span>
+								<span class="right_param_1"></span>
+							</div>
+							<div class="line_params">
+								<span class="left_param">Вид лестницы:</span>
+								<span class="right_param_2"></span>
+							</div>
+							<div class="line_params">
+								<span class="left_param">Тип отделки:</span>
+								<span class="right_param_6"></span>
+							</div>
+							<div class="line_params">
+								<span class="left_param">Длина лестницы:</span>
+								<span class="right_param_4"></span>
+							</div>
+							<div class="line_params">
+								<span class="left_param">Ширина ступени:</span>
+								<span class="right_param_5"></span>
+							</div>
+							<div class="line_params">
+								<span class="left_param">Высота этажа:</span>
+								<span class="right_param_3"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn_class"><a class="btn_click" href="#">Получить рассчет</a></div>
 			</div>
 		</div>
 	</div>
