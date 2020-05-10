@@ -34,6 +34,9 @@
 					font-weight: normal;
 					font-size: 14px;
 					line-height: 140%;
+					@media (max-width: 567px) {
+						display: none;
+					}
 				}
 			}
 			.title_box {
@@ -48,6 +51,9 @@
 					padding-bottom: 40px;
 					position: relative;
 					z-index: 100;
+					@media (max-width: 567px) {
+						font-size: 29px;
+					}
 				}
 				&:before {
 					content: '';
@@ -58,6 +64,11 @@
 					height: 18px;
 					background: #FF9646;
 					z-index: 10;
+					@media (max-width: 567px) {
+						width: 100px;
+						height: 15px;
+						left: -20px;
+					}
 				}
 			}
 			.center_block {

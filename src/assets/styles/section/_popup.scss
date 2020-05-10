@@ -17,6 +17,12 @@
 		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 		border-radius: 2px;
 		width: 410px;
+		@media (max-width: 576px) {
+			width: 390px;
+		}
+		@media (max-width: 400px) {
+			width: 315px;
+		}
 		.popup-close {
 			position: absolute;
 			z-index: 600;
@@ -118,6 +124,9 @@
 						font-size: 14px;
 						line-height: 140%;
 						color: #202020;
+						@media (max-width: 400px) {
+							width: 300px;
+						}
 					}
 				}
 			}
@@ -175,12 +184,25 @@
 	height: 100%;
 	z-index: 500;
 	background-color: rgba(0, 0, 0, 0.7);
-	.wrapper {
+	.wrappers {
 		position: fixed;
 		left: 50%;
 		top:50%;
 		transform: translateX(-50%) translateY(-50%);
+		max-width: 960px;
 		width: 100%;
+		@media (max-width: 992px) {
+			max-width: 768px;
+		}
+		@media (max-width: 768px) {
+			max-width: 567px;
+		}
+		@media (max-width: 576px) {
+			max-width: 386px;
+		}
+		@media (max-width: 400px) {
+			max-width: 315px;
+		}
 		.popup-content_quiz {
 			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 			background: #fff;
@@ -225,6 +247,9 @@
 					font-size: 29px;
 					line-height: 140%;
 					padding-bottom: 30px;
+					@media (max-width: 576px) {
+						font-size: 20px;
+					}
 				}
 			}
 			.slider_box_popup_quiz {
@@ -290,6 +315,39 @@
 					max-width: 934px;
 					width: 100%;
 					margin: 0 auto;
+					.slick-slide {
+						text-align: center;
+					}
+					.slick-dots {
+						left: 50%;
+						bottom: -40px;
+						transform: translateX(-50%) translateY(0px);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						li {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							button {
+								&:before {
+									content: '';
+								}
+								
+								width: 9px;
+								height: 9px;
+								background: #F9BB88;
+								transition: all 200ms ease-in-out;
+							}
+							&.slick-active {
+								button {
+									background: #202020;
+									border: 4px solid #202020;
+									transition: all 200ms ease-in-out;
+								}
+							}
+						}
+					}
 				}
 			}
 			.btn_class {
@@ -298,6 +356,18 @@
 				padding-bottom: 60px;
 				width: 934px;
 				margin: 0 auto;
+				@media (max-width: 992px) {
+					max-width: 768px;
+				}
+				@media (max-width: 768px) {
+					max-width: 567px;
+				}
+				@media (max-width: 576px) {
+					max-width: 386px;
+				}
+				@media (max-width: 400px) {
+					max-width: 315px;
+				}
 				.btn_click {
 					font-weight: 500;
 					font-size: 14px;
@@ -316,6 +386,10 @@
 
 .popup_quiz2 {
 	.popup-content_quiz {
+		@media (max-width: 768px) {
+			height: 644px;
+			overflow-y: scroll;
+		}
 		.title_box {
 			.line_background {
 				.line {
@@ -327,9 +401,19 @@
 			display: flex;
 			justify-content: center;
 			padding-bottom: 60px;
-
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+			}
 			.left_block {
 				padding-right: 90px;
+				@media (max-width: 992px) {
+					padding-right: 20px;
+				}
+				@media (max-width: 768px) {
+					width: 100%;
+					order: 1;
+					padding-right: 0;
+				}
 				.sub_title_quiz {
 					font-weight: normal;
 					font-size: 29px;
@@ -340,6 +424,10 @@
 				}
 				.box_quiz {
 					display: flex;
+					@media (max-width: 768px) {
+						justify-content: center;
+						padding-bottom: 30px;
+					}
 					.card_quiz {
 						&:not(:last-child) {
 						  margin-right: 10px;
@@ -348,6 +436,10 @@
 				}
 			}
 			.right_block {
+				@media (max-width: 768px) {
+					width: 100%;
+					order: 2;
+				}
 				.sub_title_quiz {
 					font-weight: normal;
 					font-size: 29px;
@@ -389,6 +481,9 @@
 								font-size: 14px;
 								line-height: 140%;
 								color: #202020;
+								@media (max-width: 400px) {
+									max-width: 300px;
+								}
 							}
 						}
 					}
@@ -416,6 +511,10 @@
 
 .popup_quiz4 {
 	.popup-content_quiz {
+		@media (max-width: 768px) {
+			height: 644px;
+			overflow-y: scroll;	
+		}
 		.title_box {
 			.line_background {
 				.line {
@@ -426,8 +525,20 @@
 		.center_box_quiz {
 			display: flex;
 			justify-content: center;
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+			}
+
 			.left_block {
 				padding-right: 140px;
+				@media (max-width: 992px) {
+					padding-right: 30px;
+				}
+				@media (max-width: 768px) {
+					order: 2;
+					width: 100%;
+					padding-right: 0;
+				}
 				.sub_title_quiz {
 					font-weight: normal;
 					font-size: 29px;
@@ -435,6 +546,9 @@
 					text-align: center;
 					display: block;
 					padding-bottom: 30px;
+					@media (max-width: 992px) {
+						font-size: 25px;
+					}
 				}
 				.form_block_popup {
 					.input_box {
@@ -469,12 +583,31 @@
 								font-size: 14px;
 								line-height: 140%;
 								color: #202020;
+								@media (max-width: 992px) {
+									width: 340px;
+								}
+								@media (max-width: 400px) {
+									max-width: 300px;
+								}
 							}
 						}
 					}
 				}
 			}
 			.right_block {
+				@media (max-width: 768px) {
+					order: 1;
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding-bottom: 30px;
+				}
+				@media (max-width: 400px) {
+					overflow: scroll;
+					align-items: flex-start;
+					padding-left: 10px;
+				}
 				.sub_title_quiz {
 					font-weight: normal;
 					font-size: 29px;
@@ -482,8 +615,18 @@
 					text-align: center;
 					display: block;
 					padding-bottom: 30px;
+					@media (max-width: 992px) {
+						font-size: 25px;
+					}
+					@media (max-width: 400px) {
+						margin: 0 auto;
+					}
 				}
 				.parameters {
+					@media (max-width: 400px) {
+						overflow: scroll;
+						width: 400px;
+					}
 					.line_params {
 						display: flex;
 						padding-bottom: 15px;
@@ -495,7 +638,7 @@
 							line-height: 140%;
 							color: rgba(0, 0, 0, 0.6);
 						}
-						.right_param {
+						.right_param_1, .right_param_2, .right_param_3, .right_param_4, .right_param_5, .right_param_6 {
 							display: block;
 							font-weight: 600;
 							font-size: 14px;
@@ -505,6 +648,12 @@
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.over_hidden {
+		overflow: hidden;
 	}
 }
 

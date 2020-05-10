@@ -4,10 +4,9 @@ $(document).ready(function(){
 	'use strict';
 
 	/* btn menu */
-	$('.nav_btn_mobile').click(function(){
-	   $('.nav_btn_mobile').toggleClass('nav-active');
-		$('.nav_mobile').toggleClass('nav-active_mobile');
-		$('.check_in').toggleClass('check-active');
+	$('.nav_btn').click(function(){
+	   $('.nav_btn').toggleClass('nav-active');
+		$('.nav_mobile').toggleClass('nav-active');
 	});
 
 
@@ -19,7 +18,41 @@ $(document).ready(function(){
 			  slidesToScroll: 1,
 			  appendArrows: $('.three_slider_navigation'),
 			  prevArrow: "<div class=\"left\"><i class=\"fas fa-chevron-left\"></i></div>",
-			  nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>"
+			  nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>",
+			  responsive: [
+				  	{
+				  		breakpoint: 993,
+				  		settings: {
+				  			slidesToShow: 4,
+				  			slidesToScroll: 1
+				  		}
+				  	},
+				  	{
+				  		breakpoint: 769,
+				  		settings: {
+				  			slidesToShow: 3,
+				  			slidesToScroll: 1
+				  		}
+				  	},
+				  	{
+				  		breakpoint: 577,
+				  		settings: {
+				  			slidesToShow: 2,
+				  			slidesToScroll: 1,
+				  			dots: true,
+				  			arrows: false
+				  		}
+				  	},
+				  	{
+				  		breakpoint: 401,
+				  		settings: {
+				  			slidesToShow: 1,
+				  			slidesToScroll: 1,
+				  			dots: true,
+				  			arrows: false
+				  		}
+				  	}
+			  ]
 			});
 		}
 
@@ -31,7 +64,24 @@ $(document).ready(function(){
 		  slidesToScroll: 1,
 		  appendArrows: $('.stairs_slider_navigation'),
 		  prevArrow: "<div class=\"left\"><i class=\"fas fa-chevron-left\"></i></div>",
-		  nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>"
+		  nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>",
+		  responsive: [
+			  	{
+			  		breakpoint: 992,
+			  		settings: {
+			  			slidesToShow: 2,
+			  			slidesToScroll: 1
+			  		}
+			  	},
+			  	{
+			  		breakpoint: 577,
+			  		settings: {
+			  			slidesToShow: 1,
+			  			slidesToScroll: 1,
+			  			dots: true
+			  		}
+			  	}
+		  ]
 		});
 	}
 
@@ -85,7 +135,7 @@ $(document).ready(function(){
 		$('.popup_quiz3').fadeIn(400);
 		$('.popup_quiz4').fadeOut(400);
 		$('body').addClass('over_hidden');
-		$('.box_quiz_three').slick('reinit');
+		$('.box_quiz_three').slick('refresh');
 	});
 
 	$('.next_quiz4').on('click', function(event) {
@@ -124,7 +174,41 @@ $(document).ready(function(){
 		  slidesToScroll: 1,
 		  appendArrows: $('.quiz_slider_navigation'),
 		  prevArrow: "<div class=\"left\"><i class=\"fas fa-chevron-left\"></i></div>",
-		  nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>"
+		  nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>",
+		  responsive: [
+			  	{
+			  		breakpoint: 993,
+			  		settings: {
+			  			slidesToShow: 4,
+			  			slidesToScroll: 1
+			  		}
+			  	},
+			  	{
+			  		breakpoint: 769,
+			  		settings: {
+			  			slidesToShow: 3,
+			  			slidesToScroll: 1
+			  		}
+			  	},
+			  	{
+			  		breakpoint: 577,
+			  		settings: {
+			  			slidesToShow: 2,
+			  			slidesToScroll: 1,
+			  			dots: true,
+			  			arrows: false
+			  		}
+			  	},
+			  	{
+			  		breakpoint: 401,
+			  		settings: {
+			  			slidesToShow: 1,
+			  			slidesToScroll: 1,
+			  			dots: true,
+			  			arrows: false
+			  		}
+			  	}
+		  ]
 		});
 	}
 

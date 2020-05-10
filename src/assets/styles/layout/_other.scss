@@ -8,9 +8,6 @@
 	line-height: 20px;
 	text-align: center;
 	transition: all 200ms ease-in-out;
-	@media (max-width: 1440px) {
-		padding: 10px 40px;					
-	}
 	&:hover {
 		background: #FF9646;
 		transition: all 200ms ease-in-out;
