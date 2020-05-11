@@ -34,14 +34,56 @@
 			height: 577px;
 			width: 386px;
 			background: #F9BB88;
+			@media (max-width: 1440px) {
+				width: 350px;			
+			}
+			@media (max-width: 992px) {
+				width: 280px;
+			}
+			@media (max-width: 768px) {
+				height: 540px;
+			}
+			@media (max-width: 576px) {
+				width: 80px;
+				height: 500px;
+			}
+			@media (max-width: 400px) {
+				width: 70px;
+			}
 		}
 		#container {
 			padding-bottom: 100px;
+			@media (max-width: 1440px) {
+				margin-left: 25px;
+			}
+			@media (max-width: 992px) {
+				margin-left: 70px;
+			}
+			@media (max-width: 768px) {
+				margin-left: 15px;
+			}
+			@media (max-width: 576px) {
+				margin-left: 2px;
+			}
+			@media (max-width: 400px) {
+				margin-left: 0px;
+			}
+
 			.item {
-				width: 282px;
+				max-width: 282px;
+				width: 100%;
 				padding-bottom: 30px;
 				position: relative;
-				z-index: 100;	
+				z-index: 100;
+				@media (max-width: 768px) {
+					max-width: 250px;
+				}
+				@media (max-width: 576px) {
+					max-width: 380px;
+				}
+				img {
+					width: 100%;
+				}
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 .single_card_container {
 	position: relative;
-	&:before {
+	&:before { 
 		content: '';
 		position: absolute;
 		top: 0;
@@ -28,6 +28,13 @@
 		box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.08);
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: 576px) {
+			border: none;
+			padding-bottom: 100px;
+		}
 		&:before {
 			content: '';
 			display: inline-block;
@@ -46,9 +53,32 @@
 			justify-content: center;
 			align-items: center;
 			padding: 50px 0 100px 37px;
+			@media (max-width: 1440px) {
+				padding-bottom: 50px;
+				width: 45%;
+				padding: 0;
+				padding-left: 35px;
+				justify-content: space-around;
+			}
+			@media (max-width: 992px) {
+				order: 1;
+				width: 100%;
+				padding-top: 30px;
+				padding-left: 0;
+				position: relative;
+			}
+			@media (max-width: 768px) {
+				padding-left: 0;
+			}
+			@media (max-width: 576px) {
+				padding: 0;
+			}
 			.single_img {
 				padding-bottom: 120px;
 				position: relative;
+				@media (max-width: 1440px) {
+					padding-bottom: 0px;
+				}
 				&:before {
 					content: '';
 					position: absolute;
@@ -57,10 +87,36 @@
 					height: 3px;
 					width: 320px;
 					background: #f4f4f4;
+					@media (max-width: 1440px) {
+						bottom: -90px;
+						left: 55px;
+					}
+					@media (max-width: 992px) {
+						display: none;
+					}
+					@media (max-width: 576px) {
+						display: inline-block;
+						bottom: -335%;
+						left: 30px;
+					}
+				}
+				img {
+					@media (max-width: 1440px) {
+						width: 100%;
+					}
 				}
 			}
 			.cost {
 				background: #202020;
+				@media (max-width: 992px) {
+					margin-top: 30px;
+				}
+				@media (max-width: 576px) {
+					position: absolute;
+					bottom: -410%;
+					left: 0;
+					width: 100%;
+				}
 				.cost_title {
 					font-weight: normal;
 					font-size: 23px;
@@ -69,6 +125,9 @@
 					padding: 40px 68px 26px 68px;
 					span {
 						font-weight: 600;
+					}
+					@media (max-width: 576px) {
+						font-size: 18px;
 					}
 				}
 				.btn_class {
@@ -80,12 +139,28 @@
 		.right_box {
 			width: 490px;
 			padding: 50px 104px 60px 0;
+			@media (max-width: 1440px) {
+				width: 45%;
+				padding-right: 30px;
+			}
+			@media (max-width: 992px) {
+				order: 2;
+				width: 80%;
+				margin: 0 auto;
+			}
+			@media (max-width: 576px) {
+				width: 100%;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 			.title_single {
 				font-weight: 600;
 				font-size: 23px;
 				line-height: 160%;
 				display: block;
 				padding-bottom: 43px;
+				position: relative;
+				z-index: 10;
 			}
 			.price {
 				font-weight: normal;
@@ -165,17 +240,33 @@
 
 .advantages {
 	.advant_box {
+		@media (max-width: 576px) {
+		   		z-index: 100;
+		   	}
 		.list_single {
+
 			&:first-child {
 				&:before {
 					top: -50px;
 					left: -150px;
+					@media (max-width: 576px) {
+			   		z-index: 100;
+			   		left: 0;
+			   		top: -100px;
+			   	}
 				}
 		   }
 		   &:last-child {
+		   	@media (max-width: 576px) {
+		   		z-index: 100;
+		   	}
 				&:before {
 					right: -150px;
 					top: calc(100%-50px);
+					@media (max-width: 576px) {
+						right: 0;
+						top: 100%;
+					}
 				}
 		   }
 		}
