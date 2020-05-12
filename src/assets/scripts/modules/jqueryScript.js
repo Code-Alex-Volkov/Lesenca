@@ -128,24 +128,44 @@ $(document).ready(function(){
 				appendArrows: $('.work_slider_navigation'),
 			   prevArrow: "<div class=\"left\"><i class=\"fas fa-chevron-left\"></i></div>",
 			   nextArrow: "<div class=\"right\"><i class=\"fas fa-chevron-right\"></i></div>",
-				asNavFor: '.project_slider_nav'
+				asNavFor: '.project_slider_nav',
+				responsive: [
+					  	{
+					  		breakpoint: 769,
+					  		settings: {
+					  			slidesToShow: 1,
+					  			slidesToScroll: 1,
+					  			arrows: false
+					  		}
+					  	},
+					  	{
+					  		breakpoint: 577,
+					  		settings: {
+					  			slidesToShow: 1,
+					  			slidesToScroll: 1,
+					  			dots: true,
+					  			arrows: false
+					  		}
+					  	}
+				  ]
 			});
 			$('.project_slider_nav').slick({
-				slidesToShow: 3,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				asNavFor: '.slider_work',
-				dots: false,
+				dots: true,
 				arrows: false,
+				fade: true,
 				//centerMode: false,
 				focusOnSelect: true
 			});
 
-			$('.project_slider_nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+			/*$('.project_slider_nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 			  var tabs_container = $('.project_tab_container');
 
 			  tabs_container.find($('.tab-item')).hide();
 			  tabs_container.find($('.tab-' + nextSlide)).show();
-			});
+			});*/
 		}
 
 	/* slider one */
@@ -232,6 +252,24 @@ $(document).ready(function(){
 		$('.popup').fadeOut(400);
 		$('body').removeClass('over_hidden');
 	});
+	/*$('.submit').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeOut(400);
+		$('.popup-ok').fadeIn(400);
+		$('body').addClass('over_hidden');
+	});*/
+	
+
+	/*$(".wpcf7").on('wpcf7:mailsent', function(event){
+		$('.popup').fadeOut(400);
+		$('.popup-ok').fadeIn(400);						
+	});
+*/
+	$('.popup-close-ok').on('click', function(event) {
+		event.preventDefault();
+		$('.popup-ok').fadeOut(400);
+		$('body').removeClass('over_hidden');
+	});
 
 
 	/* slider 3 */
@@ -300,6 +338,9 @@ $(document).ready(function(){
        var text = $('input[type="radio"][name="interior"]:checked').val();
        $('.right_param_6').text(text);
     });
+
+
+	
 
 });
 

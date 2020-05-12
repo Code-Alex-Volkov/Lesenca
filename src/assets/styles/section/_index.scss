@@ -336,6 +336,7 @@
 					background: #202020;
 					position: absolute;
 					bottom: -220px;
+					z-index: 110;
 					@media (max-width: 1440px) {
 						bottom: -103px;	
 					}
@@ -354,8 +355,7 @@
 						justify-content: center;
 						flex-direction: column;
 						align-items: center;
-						padding-top: 40px;
-						z-index: 99;			
+						padding-top: 40px;		
 					}
 					.cost_title {
 						font-weight: normal;
@@ -518,13 +518,6 @@
 			}
 		}
 	}	
-}
-
-.tab-item {
-	display: none;
-	&.tab-0 {
-		display: block;
-	}
 }
 
 .advantages {
@@ -1473,24 +1466,32 @@
 			}
 		}
 		.work_box {
-			display: flex;
-			justify-content: space-between;
-			@media (max-width: 768px) {
-				flex-wrap: wrap;
-			}
+			position: relative;
+
 			.work_left_box {
+				padding-bottom: 190px;
+				@media (max-width: 1440px) {
+					padding-bottom: 121px;
+				}
 				@media (max-width: 768px) {
 					order: 2;
 					width: 100%;
-					padding-top: 30px;
+					padding-top: 600px;
 					padding-bottom: 50px;
-					padding-left: 110px;
-				}
-				@media (max-width: 576px) {
 					padding-left: 0;
+
 				}
-				@media (max-width: 576px) {
-					padding-top: 60px;
+				@media (max-width: 380px) {
+					padding-top: 550px;
+				}
+				@media (max-width: 360px) {
+					padding-top: 520px;
+				}
+				@media (max-width: 340px) {
+					padding-top: 500px;
+				}
+				@media (max-width: 320px) {
+					padding-top: 470px;
 				}
 				.title_work {
 					font-weight: 600;
@@ -1549,14 +1550,23 @@
 				width: 490px;
 				margin-top: -150px;
 				margin-right: 100px;
+				position: absolute;
+				top: 0;
+				right: 0;
+
 				@media (max-width: 1440px) {
 					width: 380px;
 					margin-top: -110px;			
 				}
+				@media (max-width: 992px) {
+					margin-right: 0;
+				}
 				@media (max-width: 768px) {
 					order: 1;
 					margin-right: 0;
-					margin-left: 112px;
+					margin-left: 0;
+					margin-top: 0;
+					left: 0;
 				}
 				@media (max-width: 576px) {
 					margin-left: 0;
@@ -1611,6 +1621,9 @@
 						}
 						@media (max-width: 768px) {
 							bottom: -45px;
+							margin-right: 0;
+							justify-content: center;
+							width: 100%;
 						}
 						@media (max-width: 576px) {
 							justify-content: center;
@@ -1629,7 +1642,7 @@
 								height: 9px;
 								background: #F4F4F4;
 								transition: all 200ms ease-in-out;
-								@media (max-width: 576px) {
+								@media (max-width: 768px) {
 									background: #F9BB88;
 								}
 							}
@@ -1660,8 +1673,6 @@
 					}
 					@media (max-width: 768px) {
 						padding: 30px 65px;
-					}
-					@media (max-width: 576px) {
 						display: none;
 					}
 					.left {

@@ -202,11 +202,9 @@
 				<h2 class="title_section">Примеры <br> наших работ</h2>
 			</div>
 			<div class="work_box">
-				
-				
 				<div class="work_left_box">
-					<div class="project_tab_container">
-						<div class="tab-item tab-0">
+					<div class="project_slider_nav">
+						<div class="tab-items">
 							<span class="title_work">Прямая лестница в новом <br> доме, г. Нижний Новгород 1</span>
 							<ul>
 								<li>Тип помещения:<span>частный дом</span></li>
@@ -218,7 +216,7 @@
 							</ul>
 							<div class="btn_class"><a class="btn_click" href="#">Хочу такую лестницу</a></div>
 						</div>
-						<div class="tab-item tab-1">
+						<div class="tab-items">
 							<span class="title_work">Прямая лестница в новом <br> доме, г. Нижний Новгород 2</span>
 							<ul>
 								<li>Тип помещения:<span>частный дом</span></li>
@@ -230,7 +228,7 @@
 							</ul>
 							<div class="btn_class"><a class="btn_click" href="#">Хочу такую лестницу</a></div>
 						</div>
-						<div class="tab-item tab-2">
+						<div class="tab-items">
 							<span class="title_work">Прямая лестница в новом <br> доме, г. Нижний Новгород 3</span>
 							<ul>
 								<li>Тип помещения:<span>частный дом</span></li>
@@ -242,7 +240,7 @@
 							</ul>
 							<div class="btn_class"><a class="btn_click" href="#">Хочу такую лестницу</a></div>
 						</div>
-						<div class="tab-item tab-3">
+						<div class="tab-items">
 							<span class="title_work">Прямая лестница в новом <br> доме, г. Нижний Новгород 4</span>
 							<ul>
 								<li>Тип помещения:<span>частный дом</span></li>
@@ -256,6 +254,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="work_right_box">
 					<div class="slider_work">
 						<div class="img_work_list"><img src="assets/images/right_img2.jpg" alt="Слайд"></div>
@@ -264,8 +263,6 @@
 						<div class="img_work_list"><img src="assets/images/right_img2.jpg" alt="Слайд"></div>
 					</div>
 					<div class="work_slider_navigation"></div>
-					<div class="project_slider_nav">
-					</div>
 				</div>
 			</div>
 		</div>
@@ -447,6 +444,27 @@
 							<span class="ok_clik">Нажимая на кнопку вы соглашаетесь <br>с <a href="#">политикой конфиденциальности</a>.</span>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-ok">
+		<!-- Само (белое) модальное окно -->
+		<div class="popup-dialog">
+			<!-- Содержимое модального окна -->
+			<div class="popup-content">
+				<div class="popup-close-ok">
+					<span class="top_line"></span>
+					<span class="bottom_line"></span>
+				</div>
+				<!-- Заголовок окна -->
+				<div class="title_box">
+					<span class="title_section" style="font-size: 36px;text-align: center;">Спасибо</span>
+					<span class="sub_title_section" style="padding-left: 90px;padding-right: 90px;">Заявка успешно отправлена</span>
+				</div>
+				<div class="form_block_popup">
+					<img class="img-ok" src="assets/images/popup-ok.svg" alt="ok">
 				</div>
 			</div>
 		</div>
@@ -674,59 +692,61 @@
 						<span class="line"></span>
 					</div>
 				</div>
-				<div class="center_box_quiz">
-					<div class="left_block">
-						<span class="sub_title_quiz">Куда отправить рассчет?</span>
-						<div class="form_block_popup">
-							<form action="#">
-								<div class="input_box">
-									<div class="input_block">
-										<label for="your_name_quiz">Ваше имя...</label>
-										<input type="text" id="your_name_quiz" class="input__name_quiz" name="name_quiz" required>
+				<form action="#">
+					<div class="center_box_quiz">
+						<div class="left_block">
+							<span class="sub_title_quiz">Куда отправить рассчет?</span>
+							<div class="form_block_popup">
+								
+									<div class="input_box">
+										<div class="input_block">
+											<label for="your_name_quiz">Ваше имя...</label>
+											<input type="text" id="your_name_quiz" class="input__name_quiz" name="name_quiz" required>
+										</div>
+										<div class="input_block">
+											<label for="your_phone_quiz">Ваш телефон...</label>
+											<input type="tel" id="your_phone_quiz" class="input_phone_quiz" name="phone_quiz" required>
+										</div>
+										<div class="input_block">
+											<label for="your_email_quiz">Ваш e-mail...</label>
+											<input type="email" id="your_email_quiz" class="input_email_quiz" name="email_quiz" required>
+										</div>
 									</div>
-									<div class="input_block">
-										<label for="your_phone_quiz">Ваш телефон...</label>
-										<input type="tel" id="your_phone_quiz" class="input_phone_quiz" name="phone_quiz" required>
-									</div>
-									<div class="input_block">
-										<label for="your_email_quiz">Ваш e-mail...</label>
-										<input type="email" id="your_email_quiz" class="input_email_quiz" name="email_quiz" required>
-									</div>
+								
+							</div>
+						</div>
+						<div class="right_block">
+							<span class="sub_title_quiz">Параметры</span>
+							<div class="parameters">
+								<div class="line_params">
+									<span class="left_param">Тип лестницы:</span>
+									<input type="text" class="right_param_1" value="">
 								</div>
-							</form>
-						</div>
-					</div>
-					<div class="right_block">
-						<span class="sub_title_quiz">Параметры</span>
-						<div class="parameters">
-							<div class="line_params">
-								<span class="left_param">Тип лестницы:</span>
-								<span class="right_param_1"></span>
-							</div>
-							<div class="line_params">
-								<span class="left_param">Вид лестницы:</span>
-								<span class="right_param_2"></span>
-							</div>
-							<div class="line_params">
-								<span class="left_param">Тип отделки:</span>
-								<span class="right_param_6"></span>
-							</div>
-							<div class="line_params">
-								<span class="left_param">Длина лестницы:</span>
-								<span class="right_param_4"></span>
-							</div>
-							<div class="line_params">
-								<span class="left_param">Ширина ступени:</span>
-								<span class="right_param_5"></span>
-							</div>
-							<div class="line_params">
-								<span class="left_param">Высота этажа:</span>
-								<span class="right_param_3"></span>
+								<div class="line_params">
+									<span class="left_param">Вид лестницы:</span>
+									<textarea class="right_param_2"></textarea>
+								</div>
+								<div class="line_params">
+									<span class="left_param">Тип отделки:</span>
+									<textarea class="right_param_6"></textarea>
+								</div>
+								<div class="line_params">
+									<span class="left_param">Длина лестницы:</span>
+									<textarea class="right_param_4"></textarea>
+								</div>
+								<div class="line_params">
+									<span class="left_param">Ширина ступени:</span>
+									<textarea class="right_param_5"></textarea>
+								</div>
+								<div class="line_params">
+									<span class="left_param">Высота этажа:</span>
+									<textarea class="right_param_3"></textarea>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="btn_class"><a class="btn_click" href="#">Получить рассчет</a></div>
+					<div class="btn_class"><a class="btn_click" href="#">Получить рассчет</a></div>
+				</form>
 			</div>
 		</div>
 	</div>

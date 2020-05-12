@@ -1,4 +1,4 @@
-.popup {
+.popup, .popup-ok {
  	display:none;
 	position: fixed;
 	left: 0;
@@ -23,7 +23,7 @@
 		@media (max-width: 400px) {
 			width: 315px;
 		}
-		.popup-close {
+		.popup-close, .popup-close-ok {
 			position: absolute;
 			z-index: 600;
 			top: -25px;
@@ -92,6 +92,12 @@
 			}
 		}
 		.form_block_popup {
+			.img-ok {
+				 display: block;
+			    margin: 0 auto;
+			    padding-bottom: 100px;
+			    padding-top: 20px;
+			}
 			.input_box {
 				display: flex;
 				flex-direction: column;
@@ -173,6 +179,24 @@
 		}
 	}	
 }
+
+
+.popup-ok .title_box {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 90px !important;
+				left: 100px !important;
+				width: 120px;
+				height: 18px;
+				background: #F9BB88;
+				z-index: 10;
+			}
+		}
 
 .popup_quiz, .popup_quiz2, .popup_quiz3, .popup_quiz4 {
  	display:none;
@@ -530,7 +554,7 @@
 			}
 
 			.left_block {
-				padding-right: 140px;
+				padding-right: 120px;
 				@media (max-width: 992px) {
 					padding-right: 30px;
 				}
@@ -643,6 +667,11 @@
 							font-weight: 600;
 							font-size: 14px;
 							line-height: 140%;
+							border: none;
+							height: 20px;
+							width: 220px;
+							resize: none;
+							outline: none;
 						}
 					}
 				}
